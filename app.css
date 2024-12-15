@@ -1,0 +1,249 @@
+/* Genel Stil Ayarları */
+html {
+    scroll-behavior: smooth; /* Smooth scroll */
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.navbar .logo img {
+    width: 75px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #f39c12;
+}
+
+/* Hero Bölümü */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 20px 20px 20px; /* Navbar yüksekliği kadar boşluk */
+    background-color: #f4f4f4;
+    align-items: center;
+    margin-bottom: 36px;
+}
+
+.hero img {
+    max-width: 100%; /* Kapsayıcı genişliğini aşmasını önler */
+    height: auto;    /* Oranlı şekilde küçültür */
+    object-fit: cover;  /* Görüntüyü düzgün yerleştirir */
+}
+
+
+.hero h1 {
+    font-size: 36px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Bölümler İçin Boşluk */
+#home, #about, #vehicles, #contact {
+    padding-top: 60px;  /* Navbar yüksekliği kadar padding */
+    margin-top: -60px;  /* Navbar ile örtüşmesini engeller */
+}
+
+/* Hakkımızda Bölümü */
+.about {
+    padding: 60px 20px;
+    background-color: #e9ecef;
+}
+
+.about h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+}
+
+/* Araçlar Bölümü */
+.vehicles {
+    padding: 60px 20px;
+}
+
+.vehicles h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.vehicle-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.vehicle {
+    width: 30%;
+    margin: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.vehicle img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.vehicle h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.vehicle .btn {
+    padding: 10px 20px;
+    background-color: #f39c12;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.vehicle .btn:hover {
+    background-color: #e67e22;
+}
+
+/* İletişim Bölümü */
+.contact {
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+}
+
+.contact h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.contact label {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.contact input,
+.contact textarea {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact button {
+    padding: 10px 20px;
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #e67e22;
+}
+
+/* Footer */
+.main-footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 0; /* Beyaz boşlukları kaldırır */
+    font-size: 14px;
+}
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 5px 1px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+}
+
+.navbar .logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links li a:hover {
+    color: #ff9800;
+}
+
+.logoresmi{
+    border-radius: 10px;
+    margin-left: 5px;
+    margin-top: 3px;
+}
+
+.magazafoto{
+    height: 70%;
+}
+
